@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-light"
+    style="background-color: #fff; border-bottom: 1px solid #0099ff; padding: 2px 20px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav" aria-controls="topnav"
+        aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
+        id="topnav-dropdown-toggle">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand desktop-only zoom-on-hover" routerLink="/"><img src="assets/images/logo.svg" height="35px"
+            alt="Official Logo"></a>
+    <a class="navbar-brand mobile-only zoom-on-hover" routerLink="/"><img src="assets/images/logo-mini.svg"
+            height="35px" alt="Official Logo"></a>
+    <div class="collapse navbar-collapse" id="topnav">
+        <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://medium.com/shuddhi-fund" target="blank"
+                    rel="noreferrer noopener">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="main-content">
+    <router-outlet></router-outlet>
+</div>
+<nav class="navbar navbar-expand fixed-bottom navbar-light bg-light desktop-only"
+    style=" background: rgba(0,0,0,.01); border-bottom: 1px solid rgba(0,0,0,.3); display: block;">
+    <div class=" navbar-collapse" id="bottomnav">
+        <ul class="navbar-nav footer-links">
+            <li class="nav-link">
+                <a href="https://github.com/shuddhifund/shuddhifund-org" target="blank" rel="noreferrer noopener">
+                    <i class="fa fa-github"></i> Github
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="https://twitter.com/shuddhifund" target="blank" rel="noreferrer noopener">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+            </li>
+        </ul>
+        <footer class="unselectable copyright-text-desktop">
+            Copyright &copy; {{currentYear}} Shuddhi
+            Fund, All Rights Reserved </footer>
+        <ul class="navbar-nav ml-md-auto footer-links">
+            <li class="nav-link">
+                <a routerLink="/privacy">Privacy</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<p class="mobile-only">
+    <button mat-mini-fab color="accent" aria-label="Toggle Bottom Nav" data-toggle="collapse"
+        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+        (click)="toggleMobileBottomnav()"
+        style="display: block; margin-left: auto; margin-right: auto; background: #0099ff; cursor: pointer;">
+        <i [class]=" mobileBottomNavIcon" style="color: white;"></i>
+    </button>
+</p>
+<div class="collapse mobile-only" id="collapseExample" style="border-top: 1px solid rgba(0,0,0,.1);">
+    <div style=" display: block; margin-left: auto; margin-right: auto;">
+        <ul class="navbar-nav bd-navbar-nav flex-row footer-links justify-content-center">
+            <li class="nav-link">
+                <a href="https://github.com/shuddhifund/shuddhifund-org" target="blank" rel="noreferrer noopener">
+                    <i class="fa fa-github"></i> Github
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="https://twitter.com/shuddhifund" target="blank" rel="noreferrer noopener">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+            </li>
+            <li class="nav-link">
+                <a routerLink="/privacy">Privacy</a>
+            </li>
+        </ul>
+    </div>
+    <footer class="unselectable copyright-text">
+        Copyright &copy; {{currentYear}} Shuddhi
+        Fund, All Rights Reserved
+    </footer>
+</div>
