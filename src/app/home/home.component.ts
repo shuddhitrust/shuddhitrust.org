@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { videos } from './../../videos.config';
+import { videos } from '../../links.config';
 
 @Component({
   selector: 'app-home',

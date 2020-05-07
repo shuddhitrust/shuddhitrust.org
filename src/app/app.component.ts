@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { twitter, medium, github } from '../links.config';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,10 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  twitter = twitter
+  medium = medium
+  github = github
+
   currentYear = new Date().getFullYear();
   showMobileBottomnav = false;
   mobileBottomNavIcon = 'fa fa-chevron-up';
