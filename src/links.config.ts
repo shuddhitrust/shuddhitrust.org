@@ -1,5 +1,6 @@
 // Latest videos at the top
 export const videos = [
+    { id: "34ooDS-0R6s", title: "Shuddhi Vidhya Updates: Isha Vidhya Collaboration & Our new YouTube Channels!", description: "In this video I speak about a couple of updates regarding our efforts with Shuddhi Vidhya as of July 2020." },
     { id: "SDaGO4GvsqA", title: "Revolutionising Education: Part 2", description: "A discussion on how we can solve the problems in our approach to education." },
     { id: "algbtcpKevw", title: "Revolutionising Education: Part 1", description: "What are some of the problems in our approach to education today?" },
     { id: "saU8WohDQiA", title: "Introducing Shuddhi Vidhya", description: "Why is it important to critically examine education? What is our vision for it?" },
