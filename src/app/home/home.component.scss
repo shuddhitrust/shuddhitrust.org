@@ -22,6 +22,7 @@
 
 .video-caption {
   max-width: 560px;
+  max-height: 300px;
   padding: 10px;
   margin-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -36,8 +37,9 @@
 }
 
 h1 {
-  background: rgba(0, 0, 0, 0.1);
+  // background: rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 1);
+  font-size: 2em;
   font-weight: bold;
   text-align: center;
 }
