@@ -1,5 +1,12 @@
 // Latest videos at the top
 export const videos = [
+  
+  {
+    id: 'sR0M6FxfLsY',
+    title: 'Journey with Isha Vidhya so far - Sep 2020 Update',
+    description:
+      "In this video, I go into the details of our journey with the Isha Vidhya collaboration so far. I talk in depth about the progress made so far and the challenges we face.",
+  },  
   {
     id: 'tisvb-QsVlg',
     title: 'Exciting updates on collaboration with Isha Vidhya!',
