@@ -2,6 +2,12 @@
 export const videos = [
   
   {
+    id: 'tOhCD2e-rrA',
+    title: 'Why we must transform our approach to education',
+    description: 'In this video I speak about the reason why we must transform our approach to education. I go over the reasons why our education is the way it is and what is wrong with that and briefly touch upon my personal vision for how it must be.'
+  },
+  
+  {
     id: 'sR0M6FxfLsY',
     title: 'Journey with Isha Vidhya so far - Sep 2020 Update',
     description:
