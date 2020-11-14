@@ -48,3 +48,9 @@ h1 {
   text-align: left;
   padding: 20px 100px;
 }
+
+@media screen and (max-width: 600px) {
+  #initiatives {
+    padding: 10px;
+  }
+}

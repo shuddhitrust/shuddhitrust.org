@@ -33,12 +33,8 @@ export class AppComponent implements OnInit {
 
   toggleMobileBottomnav() {
     setTimeout(() => {
-      window.scrollTo({
-        left: 0,
-        top: document.body.scrollHeight,
-        behavior: 'smooth',
-      });
-    }, 500);
+      window.scrollTo(0, document.body.scrollHeight);
+    }, 400);
     this.mobileBottomNavIcon = this.showMobileBottomnav
       ? 'fa fa-chevron-up'
       : 'fa fa-chevron-down';

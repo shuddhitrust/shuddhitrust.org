@@ -1,18 +1,25 @@
 // Latest videos at the top
 export const videos = [
-  
+  {
+    id: 'HPNX5u6d2HY',
+    title: 'The path to a new approach to education',
+    description:
+      'In this video I speak about the path to achieving this new approach to education that I discussed in the previous video.',
+  },
+
   {
     id: 'tOhCD2e-rrA',
     title: 'Why we must transform our approach to education',
-    description: 'In this video I speak about the reason why we must transform our approach to education. I go over the reasons why our education is the way it is and what is wrong with that and briefly touch upon my personal vision for how it must be.'
+    description:
+      'In this video I speak about the reason why we must transform our approach to education. I go over the reasons why our education is the way it is and what is wrong with that and briefly touch upon my personal vision for how it must be.',
   },
-  
+
   {
     id: 'sR0M6FxfLsY',
     title: 'Journey with Isha Vidhya so far - Sep 2020 Update',
     description:
-      "In this video, I go into the details of our journey with the Isha Vidhya collaboration so far. I talk in depth about the progress made so far and the challenges we face.",
-  },  
+      'In this video, I go into the details of our journey with the Isha Vidhya collaboration so far. I talk in depth about the progress made so far and the challenges we face.',
+  },
   {
     id: 'tisvb-QsVlg',
     title: 'Exciting updates on collaboration with Isha Vidhya!',
