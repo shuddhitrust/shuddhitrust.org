@@ -4,34 +4,34 @@ export const videos = [
     id: 'HPNX5u6d2HY',
     title: 'The path to a new approach to education',
     description:
-      'In this video I speak about the path to achieving this new approach to education that I discussed in the previous video.',
+      'The path to achieving this new approach to education that was discussed previously',
   },
 
   {
     id: 'tOhCD2e-rrA',
     title: 'Why we must transform our approach to education',
     description:
-      'In this video I speak about the reason why we must transform our approach to education. I go over the reasons why our education is the way it is and what is wrong with that and briefly touch upon my personal vision for how it must be.',
+      'The reason why we must transform our approach to education. We go over the reasons why our approach to education is the way it is and what is wrong with that and briefly touch upon our organisational vision for how it must be.',
   },
 
   {
     id: 'sR0M6FxfLsY',
     title: 'Journey with Isha Vidhya so far - Sep 2020 Update',
     description:
-      'In this video, I go into the details of our journey with the Isha Vidhya collaboration so far. I talk in depth about the progress made so far and the challenges we face.',
+      "Here's some details of our journey with the Isha Vidhya collaboration so far. We speak in depth about the progress made so far and the challenges we face.",
   },
   {
     id: 'tisvb-QsVlg',
     title: 'Exciting updates on collaboration with Isha Vidhya!',
     description:
-      "In this video I speak about an exciting new initiative we've launched as part of our collaboration with Isha Vidhya. There's a nice backstory for it too and photos/videos to accompany it too!",
+      "A discussion on an exciting new initiative we've launched as part of our collaboration with Isha Vidhya. There's a nice backstory for it too and photos/videos to accompany it too!",
   },
   {
     id: '34ooDS-0R6s',
     title:
       'Shuddhi Vidhya Updates: Isha Vidhya Collaboration & Our new YouTube Channels!',
     description:
-      'In this video I speak about a couple of updates regarding our efforts with Shuddhi Vidhya as of July 2020.',
+      'We have a couple of updates regarding our efforts with Shuddhi Vidhya as of July 2020.',
   },
   {
     id: 'SDaGO4GvsqA',
