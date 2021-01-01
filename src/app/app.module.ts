@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { StylingImports } from './styling.imports';
+import { SupportComponent } from './support/support.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    PrivacyComponent
+    SupportComponent,
+    PrivacyComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,10 +27,8 @@ import { StylingImports } from './styling.imports';
     HttpClientModule,
     ScullyLibModule,
     StylingImports,
-
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}

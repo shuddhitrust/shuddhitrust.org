@@ -1,0 +1,46 @@
+#support-info-container {
+  text-align: left;
+  margin: 10px 10vw;
+}
+.contribution-option-box {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: static;
+  text-align: center;
+  font-size: 1.2em;
+  width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+#supportbox > a {
+  margin: 10px 20px;
+}
+
+#support-options-section {
+  font-size: 1.1em;
+  display: block;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#support-options-section > ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+#support-options-section > ul > li {
+  padding: 5px;
+  margin: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .video {
+    width: 100%;
+  }
+}

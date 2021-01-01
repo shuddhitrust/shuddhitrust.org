@@ -31,7 +31,7 @@
   padding: 10px;
 }
 .nav-link:hover {
-  color: #0099ff !important;
+  color: var(--shuddhi-color) !important;
 }
 
 .footer-links li a {
@@ -39,7 +39,7 @@
   color: rgba(0, 0, 0, 0.5) !important;
 }
 .footer-links li a:hover {
-  color: #0099ff !important;
+  color: var(--shuddhi-color) !important;
 }
 
 .desktop-only {

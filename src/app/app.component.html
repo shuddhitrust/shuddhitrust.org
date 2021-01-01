@@ -2,7 +2,7 @@
   class="navbar navbar-expand-lg fixed-top navbar-light"
   style="
     background-color: #fff;
-    border-bottom: 1px solid #0099ff;
+    border-bottom: 1px solid var(--shuddhi-color);
     padding: 2px 20px;
   "
 >
@@ -20,10 +20,13 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <a class="navbar-brand desktop-only zoom-on-hover" routerLink="/"
-    ><img src="assets/images/logo.svg" height="35px" alt="Official Logo"
+    ><img src="assets/images/logo/logo.svg" height="35px" alt="Official Logo"
   /></a>
   <a class="navbar-brand mobile-only zoom-on-hover" routerLink="/"
-    ><img src="assets/images/logo-mini.svg" height="35px" alt="Official Logo"
+    ><img
+      src="assets/images/logo/logo-mini.svg"
+      height="35px"
+      alt="Official Logo"
   /></a>
   <div class="collapse navbar-collapse" id="topnav">
     <ul class="navbar-nav ml-md-auto">
@@ -42,7 +45,9 @@
           ><i style="color: black" class="fa fa-medium"></i> Blog</a
         >
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/support">Support</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/contact">Contact</a>
       </li>
@@ -88,7 +93,7 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      background: #0099ff;
+      background: var(--shuddhi-color);
       cursor: pointer;
     "
   >

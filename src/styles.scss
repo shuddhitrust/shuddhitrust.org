@@ -32,11 +32,18 @@ $ng-shuddhifund-org-theme: mat-light-theme(
 /* You can add global styles to this file, and also import other style files */
 * {
   font-family: Open-sans;
-  // font-size: 1.02em;
+  font-size: 1.02em;
 }
 
+p {
+  font-size: 1.1em;
+}
+
+:root {
+  --shuddhi-color: #0099ff;
+}
 a {
-  color: #0099ff;
+  color: var(--shuddhi-color);
 }
 
 a:hover {

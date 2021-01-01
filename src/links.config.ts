@@ -75,3 +75,6 @@ export const youtube =
   'https://www.youtube.com/channel/UCGPcmVcxRo3jUBa9HMk5aaQ';
 export const medium = 'https://medium.com/shuddhi-fund';
 export const shuddhiVidhya = 'https://shuddhividhya.org';
+export const volunteer = 'https://forms.gle/q5iwzSsXBVtmfXSp9';
+export const patreon = 'https://patreon.com/shuddhividhya';
+export const upi = 'shuddhi.vidhya@upi';
