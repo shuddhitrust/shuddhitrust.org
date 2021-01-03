@@ -43,6 +43,10 @@
   border-radius: 4px;
 }
 
+.qr-code {
+  max-height: 70%;
+}
+
 .close {
   position: absolute;
   top: 0;
@@ -74,5 +78,8 @@
   }
   .donation-option-logo {
     margin: 5px;
+  }
+  .qr-code {
+    max-height: 50%;
   }
 }
