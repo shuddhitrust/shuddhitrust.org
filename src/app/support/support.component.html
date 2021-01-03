@@ -15,9 +15,15 @@
       <hr />
       <br />
       <a [href]="patreon" target="_blank" rel="noopener noreferrer"
-        ><img src="assets/images/support/patreon-logo.png" height="50px" /></a
-      >&nbsp;&nbsp;<a href="" (click)="copyUpiId()"
-        ><img src="assets/images/support/upi-logo.png" height="50px"
+        ><img
+          class="donation-option-logo"
+          src="assets/images/support/patreon-logo.png"
+          alt="Recurring donations through Patreon" /></a
+      >&nbsp;&nbsp;<a style="cursor: pointer" (click)="openUpiModal()"
+        ><img
+          class="donation-option-logo"
+          src="assets/images/support/upi-logo.png"
+          alt="One time donation through UPI"
       /></a>
     </div>
     <div class="contribution-option-box">
@@ -26,12 +32,31 @@
       <br />
       <p>
         <a [href]="volunteer" target="blank" rel="noreferrer noopener"
-          ><i
-            style="color: #1da1f2; font-size: 3em"
-            class="fa fa-hand-paper-o"
-          ></i
-        ></a>
+          ><img
+            src="assets/images/support/volunteer-icon.svg"
+            height="60px"
+            alt="Volunteer with us"
+        /></a>
       </p>
     </div>
+  </div>
+</div>
+<!-- Modal Section -->
+
+<div class="bg-modal" [style.display]="upiModalOpen == true ? 'flex' : 'none'">
+  <div class="modal-contents">
+    <div class="close" (click)="closeUpiModal()">+</div>
+    <br />
+    <p class="notification">Ths UPI ID has been copied to your clipboard!</p>
+    <hr />
+    <h2>shuddhi.vidhya@upi</h2>
+    <hr />
+    <br />
+    <img
+      src="/assets/images/support/upi-qr.png"
+      max-height="500px"
+      width="80%"
+      alt="Shuddhi Vidhya UPI QR Code"
+    />
   </div>
 </div>

@@ -10,6 +10,8 @@ export class SupportComponent implements OnInit {
   volunteer = volunteer;
   patreon = patreon;
   upi = upi;
+  upiModalOpen = false;
+
   constructor() {}
 
   copyToClipboard = () => {
@@ -20,11 +22,17 @@ export class SupportComponent implements OnInit {
     document.execCommand('copy');
     document.body.removeChild(el);
   };
-  copyUpiId() {
+  openUpiModal() {
+    window.scroll(0, 0);
+    console.log('opening upi modal...');
     this.copyToClipboard();
+    this.upiModalOpen = true;
 
     /* Alert the copied text */
-    window.alert(upi + '\n\nUPI ID copied to clipboard!');
+    // window.alert(upi + '\n\nUPI ID copied to clipboard!');
+  }
+  closeUpiModal() {
+    this.upiModalOpen = false;
   }
   ngOnInit(): void {}
 }
