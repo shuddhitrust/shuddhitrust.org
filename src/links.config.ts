@@ -1,6 +1,12 @@
 // Latest videos at the top
 export const videos = [
   {
+    id: 'Oz_xg3-6W3M',
+    title: 'Our Approach to Transform Education',
+    description:
+      'In this video we discuss some of the key tenets of our approach to transform education in India.',
+  },
+  {
     id: 'euXTW6gd1Ww',
     title: 'Our 2nd Annual Report to Contributors',
     description:
