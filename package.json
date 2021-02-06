@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "yarn lambda-build && ng build --prod && yarn scully",
+    "build": "rm dist -rf && yarn lambda-build && ng build --prod && yarn scully",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
