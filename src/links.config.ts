@@ -19,12 +19,6 @@ export const videos = [
       'A walk-through of the Annual Report to Contributors, which details our milestones for the year past and offers relevant statistics.',
   },
   {
-    id: 'ruq46fgsExg',
-    title: 'The Parallels between Parenting & Education',
-    description:
-      'The parallels between parenting and education and how the current appraoch to education is similar to that of a patriarchal family',
-  },
-  {
     id: 'HPNX5u6d2HY',
     title: 'The path to a new approach to education',
     description:
