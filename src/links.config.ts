@@ -1,6 +1,12 @@
 // Latest videos at the top
 export const videos = [
   {
+    id: 'Dhzf3NeFFuA',
+    title: 'Shuddhi Vidhya 2020 & Challenges',
+    description:
+      'In this video we discuss some challenges we faced throughout the Shuddhi Vidhya initiative during 2020.',
+  },
+  {
     id: 'Oz_xg3-6W3M',
     title: 'Our Approach to Transform Education',
     description:
