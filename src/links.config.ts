@@ -82,7 +82,7 @@ export const videos = [
 ];
 
 export const twitter = 'https://twitter.com/shuddhitrust';
-export const github = 'https://github.com/shuddhifund/shuddhifund-org';
+export const github = 'https://github.com/shuddhitrust/shuddhitrust-org';
 export const youtube =
   'https://www.youtube.com/channel/UCGPcmVcxRo3jUBa9HMk5aaQ';
 export const medium = 'https://medium.com/shuddhitrust';
