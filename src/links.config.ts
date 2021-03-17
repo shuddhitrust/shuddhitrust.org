@@ -81,11 +81,11 @@ export const videos = [
   },
 ];
 
-export const twitter = 'https://twitter.com/shuddhifund';
+export const twitter = 'https://twitter.com/shuddhitrust';
 export const github = 'https://github.com/shuddhifund/shuddhifund-org';
 export const youtube =
   'https://www.youtube.com/channel/UCGPcmVcxRo3jUBa9HMk5aaQ';
-export const medium = 'https://medium.com/shuddhi-fund';
+export const medium = 'https://medium.com/shuddhitrust';
 export const shuddhiVidhya = 'https://shuddhividhya.org';
 export const volunteer =
   'https://docs.google.com/forms/d/e/1FAIpQLSfOctV_9Tz0zi25xlK2N13n0pYqN13iRhEI3um03kBCQciUiw/viewform?usp=sf_link';
