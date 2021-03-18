@@ -39,7 +39,7 @@ exports.handler = function (event, context, callback) {
         };
 
         let emailContentHTML = `<html><body><p><b>${formData.name} (${formData.email})</b>:</p><hr><p><b>${formData.subject}</b></p><p>${formData.content}</p><br />
-        <small style="color: gray; font-style: italic;">This email contains a message sent via the contact form on shuddhifund.org</small>
+        <small style="color: gray; font-style: italic;">This email contains a message sent via the contact form on shuddhitrust.org</small>
         </body></html>`;
 
         let emailContentPlain = `From: ${formData.name} <${formData.email}>
