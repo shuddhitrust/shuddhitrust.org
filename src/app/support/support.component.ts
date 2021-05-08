@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { volunteer, patreon, upi } from 'src/links.config';
+import { volunteer, donation, patreon, upi } from 'src/links.config';
 
 @Component({
   selector: 'app-support',
@@ -8,6 +8,7 @@ import { volunteer, patreon, upi } from 'src/links.config';
 })
 export class SupportComponent implements OnInit {
   volunteer = volunteer;
+  donation = donation;
   patreon = patreon;
   upi = upi;
   upiModalOpen = false;
