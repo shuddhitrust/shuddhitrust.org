@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { videos, shuddhiVidhya } from '../../links.config';
+import { parseDateTime } from '../shared/functions';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ import { videos, shuddhiVidhya } from '../../links.config';
 })
 export class HomeComponent implements OnInit {
   shuddhiVidhya = shuddhiVidhya;
-  videos = videos;
+  videos = videos.slice(0, 10);
   constructor(private sanitizer: DomSanitizer) {
     this.videos = this.videos.map((v) => {
       return {
@@ -19,6 +20,11 @@ export class HomeComponent implements OnInit {
         ),
       };
     });
+  }
+
+  parseDate(dateString) {
+    const date = new Date(dateString).toDateString();
+    return parseDateTime(date);
   }
 
   slideClass(i) {
