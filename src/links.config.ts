@@ -1,6 +1,13 @@
 // Latest videos at the top
 export const videos = [
   {
+    id: 'EB4DTvLv3Ds',
+    date: '2021-07-18',
+    title: 'Development Update of the Shuddhi Vidhya App (July 2021)',
+    description:
+      'A brief look at the current status of the development of the Shuddhi Vidhya online educational platform where students can login and participate in various courses.',
+  },
+  {
     id: 'KF_1mzcutqE',
     date: '2021-06-16',
     title: 'Why we need to rethink assessments',
@@ -22,7 +29,7 @@ export const videos = [
       "Here's a brief summary of what happened in the past year and where that puts us in terms of what's ahead in the coming year.",
   },
   {
-    id: '3zui6ZLmfqMFuA',
+    id: '3zui6ZLmfqM',
     date: '2021-03-28',
     title: 'Sneak peak of the Shuddhi Vidhya Platform',
     description:
