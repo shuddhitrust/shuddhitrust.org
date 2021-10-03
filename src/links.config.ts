@@ -2,6 +2,13 @@
 export const videos = [
   {
     id: 'EB4DTvLv3Ds',
+    date: '2021-10-02',
+    title: 'Introducing Vidhya.io!',
+    description:
+      'We recently launched Vidhya.io, a custom made online platform for us to offer free education to the underprivileged and rural children. This is just the start!',
+  },
+  {
+    id: 'EB4DTvLv3Ds',
     date: '2021-07-18',
     title: 'Development Update of the Shuddhi Vidhya App (July 2021)',
     description:

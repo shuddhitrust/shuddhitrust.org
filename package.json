@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "rm dist -rf && yarn lambda-build && ng build --prod && yarn scully",
+    "build": "rm dist -rf && npm run lambda-build && ng build --prod && npm run scully",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -12,7 +12,7 @@
     "lambda-build": "netlify-lambda build functions",
     "scully": "scully",
     "scully-serve": "scully serve",
-    "deploy": "yarn build && git add . && git commit -m'Rebuild and deploy' && git push origin master"
+    "deploy": "npm run build && git add . && git commit -m'Rebuild and deploy' && git push origin master"
   },
   "private": true,
   "dependencies": {
