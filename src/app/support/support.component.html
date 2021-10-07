@@ -11,29 +11,16 @@
     <hr />
     <br />
     <div class="contribution-option-box">
-      <h2>Donations</h2>
+      <h2>Donate</h2>
       <hr />
       <br />
-      <a [href]="patreon" target="_blank" rel="noopener noreferrer"
-        ><img
-          class="donation-option-logo"
-          src="assets/images/support/patreon-logo.png"
-          alt="Recurring donations through Patreon" /></a
-      >&nbsp;&nbsp;<a style="cursor: pointer" (click)="openUpiModal()"
-        ><img
-          class="donation-option-logo"
-          src="assets/images/support/upi-logo.png"
-          alt="One time donation through UPI"
-      /></a>
-      <hr />
       <p>
-        <small>
-          Please fill this
-          <a [href]="donation" target="_blank" rel="noopener noreferrer"
-            >form</a
-          >
-          after you've made your donation.</small
-        >
+        <a [href]="donation" target="blank" rel="noreferrer noopener"
+          ><img
+            src="assets/images/support/donate-icon.svg"
+            height="60px"
+            alt="Donate to us"
+        /></a>
       </p>
     </div>
     <div class="contribution-option-box">
@@ -49,24 +36,5 @@
         /></a>
       </p>
     </div>
-  </div>
-</div>
-<!-- Modal Section -->
-
-<div class="bg-modal" [style.display]="upiModalOpen == true ? 'flex' : 'none'">
-  <div class="modal-contents">
-    <div class="close" (click)="closeUpiModal()">+</div>
-    <br />
-    <p class="notification">Ths UPI ID has been copied to your clipboard!</p>
-    <hr />
-    <h2>shuddhi.vidhya@upi</h2>
-    <hr />
-    <br />
-    <img
-      src="/assets/images/support/upi-qr.png"
-      max-height="300px"
-      class="qr-code"
-      alt="Shuddhi Vidhya UPI QR Code"
-    />
   </div>
 </div>

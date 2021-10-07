@@ -145,6 +145,4 @@ export const shuddhiVidhya = 'https://shuddhividhya.org';
 export const volunteer =
   'https://docs.google.com/forms/d/e/1FAIpQLSfOctV_9Tz0zi25xlK2N13n0pYqN13iRhEI3um03kBCQciUiw/viewform?usp=sf_link';
 export const donation =
-  'https://docs.google.com/forms/d/e/1FAIpQLScgCgASEFaYKwNavHFB1oFXoETHNKYtZpX67lXE3idpUH-wtA/viewform?usp=sf_link';
-export const patreon = 'https://patreon.com/shuddhividhya';
-export const upi = 'shuddhi.vidhya@upi';
+  'https://docs.google.com/forms/d/e/1FAIpQLSe-RvNUN3wDFm_Tzh1l7OAkOU7Wjz6yPLtFGbEr21dIQCx4yw/viewform?usp=sf_link';
