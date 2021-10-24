@@ -23,70 +23,43 @@
   display: block;
 }
 
+.amount-badge {
+  background: var(--green);
+  position: absolute;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 2;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
 .contribution-option-box p a img {
   margin: 10px;
-}
-
-// MODAL STARTS HERE //
-
-.bg-modal {
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-contents {
-  height: 70vh;
-  width: 60vw;
-  background-color: white;
-  text-align: center;
-  padding: 20px;
   position: relative;
-  border-radius: 4px;
+  padding-top: 20px;
+  display: inline-block;
+  width: 80px;
+  height: auto;
 }
 
-.qr-code {
-  max-height: 70%;
-}
-
-.close {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 42px;
-  color: #333;
-  transform: rotate(45deg);
-  cursor: pointer;
-  &:hover {
-    color: #666;
-  }
-}
-
-.notification {
-  padding: 5px 10px;
-  background-color: rgba(10, 92, 10, 0.5);
-  border-radius: 3px;
-  color: white;
+.amount-options {
+  display: grid;
+  padding: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
   width: 100%;
+  margin: 0 auto 50px;
 }
-
 @media screen and (max-width: 800px) {
   .video {
     width: 100%;
   }
-  .modal-contents {
-    height: 70vh;
-    width: 90vw;
+  .contribution-options-container {
+    grid-template-columns: 1fr;
   }
-  .donation-option-logo {
-    margin: 5px;
-  }
-  .qr-code {
-    max-height: 50%;
+  .amount-options {
+    grid-template-columns: 1fr 1fr;
   }
 }
