@@ -9,6 +9,7 @@ import {
   recurring5000,
   recurring10000,
 } from 'src/app/shared/links.config';
+import { uiroutes } from 'src/app/shared/ui-routes';
 
 @Component({
   selector: 'app-support',
@@ -24,6 +25,8 @@ export class SupportComponent implements OnInit {
   recurring2500 = recurring2500;
   recurring5000 = recurring5000;
   recurring10000 = recurring10000;
+  termsConditions = uiroutes.TERMS_CONDITIONS_ROUTE;
+  refund = uiroutes.REFUND_ROUTE;
 
   constructor() {}
 

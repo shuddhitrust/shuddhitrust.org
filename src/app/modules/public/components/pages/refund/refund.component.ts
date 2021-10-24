@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { uiroutes } from 'src/app/shared/ui-routes';
 
 @Component({
-  selector: 'app-privacy',
-  templateUrl: './privacy.component.html',
-  styleUrls: ['./privacy.component.scss'],
+  selector: 'app-refund',
+  templateUrl: './refund.component.html',
+  styleUrls: ['./refund.component.scss'],
 })
-export class PrivacyComponent implements OnInit {
+export class RefundComponent implements OnInit {
   contact = uiroutes.CONTACT_ROUTE;
   constructor() {}
 

@@ -6,6 +6,8 @@ import { PrivacyComponent } from './components/pages/privacy/privacy.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { CommonModule } from '@angular/common';
 import { SupportComponent } from './components/pages/support/support.component';
+import { RefundComponent } from './components/pages/refund/refund.component';
+import { TermsConditionsComponent } from './components/pages/terms-conditions/terms-conditions.component';
 import { styling } from 'src/app/shared/styling.imports';
 
 const declarations = [
@@ -14,6 +16,8 @@ const declarations = [
   PrivacyComponent,
   ErrorPageComponent,
   SupportComponent,
+  RefundComponent,
+  TermsConditionsComponent,
 ];
 
 @NgModule({

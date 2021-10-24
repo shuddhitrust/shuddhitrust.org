@@ -1,6 +1,7 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { twitter, medium, github, youtube } from './shared/links.config';
+import { uiroutes } from './shared/ui-routes';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,9 @@ export class AppComponent implements OnInit {
   medium = medium;
   github = github;
   youtube = youtube;
+  privacy = uiroutes.PRIVACY_ROUTE;
+  termsConditions = uiroutes.TERMS_CONDITIONS_ROUTE;
+  refunds = uiroutes.REFUND_ROUTE;
 
   currentYear = new Date().getFullYear();
   showMobileBottomnav = false;

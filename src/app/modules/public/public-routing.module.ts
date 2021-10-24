@@ -4,7 +4,9 @@ import { uiroutes } from 'src/app/shared/ui-routes';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { PrivacyComponent } from './components/pages/privacy/privacy.component';
+import { RefundComponent } from './components/pages/refund/refund.component';
 import { SupportComponent } from './components/pages/support/support.component';
+import { TermsConditionsComponent } from './components/pages/terms-conditions/terms-conditions.component';
 
 /**
  * Public routes
@@ -18,15 +20,29 @@ const routes: Routes = [
     component: PrivacyComponent,
     pathMatch: 'full',
   },
-  { path: uiroutes.ABOUT_ROUTE, component: AboutComponent },
-  { path: uiroutes.SUPPORT_ROUTE, component: SupportComponent },
+  {
+    path: uiroutes.REFUND_ROUTE,
+    component: RefundComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: uiroutes.TERMS_CONDITIONS_ROUTE,
+    component: TermsConditionsComponent,
+    pathMatch: 'full',
+  },
+  { path: uiroutes.ABOUT_ROUTE, component: AboutComponent, pathMatch: 'full' },
+  {
+    path: uiroutes.SUPPORT_ROUTE,
+    component: SupportComponent,
+    pathMatch: 'full',
+  },
   {
     path: uiroutes.CONTACT_ROUTE,
     loadChildren: () =>
       import('./modules/contact/contact.module').then((m) => m.ContactModule),
   },
-  { path: 'privacy', component: PrivacyComponent },
-  { path: '', component: HomeComponent },
+  { path: 'privacy', component: PrivacyComponent, pathMatch: 'full' },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   // End of public routes
 ];
 

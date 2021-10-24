@@ -39,7 +39,12 @@ p {
   font-size: 1.1em;
 }
 
+h3 {
+  font-weight: bold;
+}
+
 :root {
+  --navbar-height: 50px;
   --shuddhi-color: #0099ff;
   --green: #66bb6a;
   --blue: #1976d2;

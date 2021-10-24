@@ -6,20 +6,20 @@
   display: grid;
   padding: 5px;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
   align-items: stretch;
   width: 100%;
-  margin: 0 auto 50px;
+  margin: 0 auto 20px;
 }
 .contribution-option-box {
-  padding: 20px 5px;
+  padding: 10px 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   position: static;
   text-align: center;
   font-size: 1.2em;
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: block;
 }
 

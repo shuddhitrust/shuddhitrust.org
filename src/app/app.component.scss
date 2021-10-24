@@ -1,7 +1,8 @@
 #main-content {
-  padding: 10px;
-  margin: 50px 5px 50px 5px;
-  min-height: calc(100vh - 150px);
+  padding-top: var(--navbar-height);
+  padding-bottom: var(--navbar-height);
+  height: 100vh;
+  overflow: auto;
 }
 
 .unselectable {
@@ -35,6 +36,7 @@
 }
 
 .footer-links li a {
+  font-size: 0.8em;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5) !important;
 }
