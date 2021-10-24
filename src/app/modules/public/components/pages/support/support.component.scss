@@ -2,6 +2,13 @@
   text-align: left;
   margin: 10px 10vw;
 }
+.inner {
+  position: relative;
+  height: auto;
+}
+.full-height {
+  height: 100%;
+}
 .contribution-options-container {
   display: grid;
   padding: 5px;
@@ -30,11 +37,11 @@
   border-radius: 10px;
   padding: 10px;
   z-index: 2;
-  margin-top: 30px;
+  margin-top: -92px;
   font-weight: bold;
 }
 
-.contribution-option-box p a img {
+.contribution-option-box div a img {
   margin: 10px;
   position: relative;
   padding-top: 20px;
