@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { PrivacyComponent } from './privacy/privacy.component';
-import { SupportComponent } from './support/support.component';
+import { RouterModule, Routes } from '@angular/router';
+import { ErrorPageComponent } from './modules/public/components/pages/error/error.component';
+import { uiroutes } from './shared/ui-routes';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'support', component: SupportComponent },
   {
-    path: 'contact',
+    path: '',
     loadChildren: () =>
-      import('./contact/contact.module').then((m) => m.ContactModule),
+      import('./modules/public/public.module').then((m) => m.PublicModule),
   },
-  { path: 'privacy', component: PrivacyComponent },
+  {
+    path: uiroutes.ERROR_ROUTE,
+    pathMatch: 'full',
+    component: ErrorPageComponent,
+  },
+  { path: '**', pathMatch: 'full', redirectTo: uiroutes.ERROR_ROUTE },
 ];
 
 @NgModule({

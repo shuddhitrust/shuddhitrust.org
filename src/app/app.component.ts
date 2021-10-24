@@ -1,6 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { twitter, medium, github, youtube } from '../links.config';
+import { twitter, medium, github, youtube } from './shared/links.config';
 
 @Component({
   selector: 'app-root',

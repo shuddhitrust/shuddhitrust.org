@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { videos, shuddhiVidhya } from '../../links.config';
-import { parseDateTime } from '../shared/functions';
+import { parseDateTime } from 'src/app/shared/functions';
+import { shuddhiVidhya, videos } from 'src/app/shared/links.config';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +10,7 @@ import { parseDateTime } from '../shared/functions';
 })
 export class HomeComponent implements OnInit {
   shuddhiVidhya = shuddhiVidhya;
-  videos = videos.slice(0, 10);
+  videos: any = videos.slice(0, 10);
   constructor(private sanitizer: DomSanitizer) {
     this.videos = this.videos.map((v) => {
       return {

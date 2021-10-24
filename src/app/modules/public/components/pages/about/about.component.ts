@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { youtube } from 'src/links.config';
+import { youtube } from 'src/app/shared/links.config';
 
 @Component({
   selector: 'app-about',

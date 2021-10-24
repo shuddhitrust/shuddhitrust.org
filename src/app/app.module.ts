@@ -1,34 +1,29 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { PrivacyComponent } from './privacy/privacy.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { FormBuilder } from '@angular/forms';
+
 import { ScullyLibModule } from '@scullyio/ng-lib';
-import { StylingImports } from './styling.imports';
-import { SupportComponent } from './support/support.component';
+import { PublicModule } from './modules/public/public.module';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { styling } from './shared/styling.imports';
+// function that returns `MarkedOptions` with renderer override
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    AboutComponent,
-    SupportComponent,
-    PrivacyComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    PublicModule,
+    AppRoutingModule,
     ScullyLibModule,
-    StylingImports,
+    styling,
   ],
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
