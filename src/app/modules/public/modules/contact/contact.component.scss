@@ -1,18 +1,35 @@
 .form-container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+}
+
+.spamprotection {
+  display: none;
+}
+
+e-mail:before {
+  content: attr(data-website) "\0040"attr(data-user);
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.bordered-box {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 800px) {
-    .form-container{
-        width: 75vw;
-    }
+  .form-container {
+    width: 75vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .form-container{
-        width: 90vw;
-    }
+  .form-container {
+    width: 90vw;
+  }
 }
