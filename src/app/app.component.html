@@ -32,10 +32,10 @@
     <div class="collapse navbar-collapse" id="topnav">
       <ul class="navbar-nav ml-md-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/">Home</a>
+          <span class="nav-link link" (click)="routeTo(home)">Home</span>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about">About</a>
+          <span class="nav-link link" (click)="routeTo(about)">About</span>
         </li>
         <li class="nav-item">
           <a
@@ -47,10 +47,10 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/support">Support</a>
+          <span class="nav-link link" (click)="routeTo(support)">Support</span>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact">Contact</a>
+          <span class="nav-link link" (click)="routeTo(contact)">Contact</span>
         </li>
       </ul>
     </div>
@@ -155,12 +155,12 @@
 
 <ng-template #footerRightLinksTempalte>
   <li class="nav-link">
-    <a [routerLink]="termsConditions">T & C</a>
+    <span class="link" (click)="routeTo(termsConditions)">T & C</span>
   </li>
   <li class="nav-link">
-    <a [routerLink]="refunds">Refund</a>
+    <span class="link" (click)="routeTo(refunds)">Refund</span>
   </li>
   <li class="nav-link">
-    <a [routerLink]="privacy">Privacy</a>
+    <span class="link" (click)="routeTo(privacy)">Privacy</span>
   </li>
 </ng-template>

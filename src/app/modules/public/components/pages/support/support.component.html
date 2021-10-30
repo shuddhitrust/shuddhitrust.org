@@ -135,8 +135,11 @@
     <p>
       <small>
         Please review our
-        <a [routerLink]="termsConditions">Terms & Conditions</a> and
-        <a [routerLink]="refund">Refund Policy</a></small
+        <span class="link" (click)="routeTo(termsConditions)"
+          >Terms & Conditions</span
+        >
+        and
+        <span class="link" (click)="routeTo(refund)">Refund Policy</span></small
       >
     </p>
   </div>

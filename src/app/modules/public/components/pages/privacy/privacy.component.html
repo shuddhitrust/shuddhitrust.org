@@ -104,8 +104,11 @@
   <h3>Contacting us</h3>
   <p>
     If you have any questions about this Privacy Policy, the practices of this
-    site, or your dealings with this site, please&nbsp;
-    <a [routerLink]="contact">contact us</a>.
+    site, or your dealings with this site, please&nbsp;<span
+      class="link"
+      (click)="routeTo(contact)"
+      >contact us</span
+    >.
   </p>
   <p>This document was last updated on October 24, 2021</p>
 </div>

@@ -51,6 +51,7 @@ h3 {
   --red: #d32f2f;
   --orange: #ff8f00;
 }
+
 a {
   color: var(--shuddhi-color);
 }
@@ -125,4 +126,13 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--shuddhi-color);
+}
+
+.link {
+  cursor: pointer;
+  color: var(--shuddhi-color);
+}
+.link:hover {
+  text-decoration: none;
+  color: rgb(38, 101, 143);
 }

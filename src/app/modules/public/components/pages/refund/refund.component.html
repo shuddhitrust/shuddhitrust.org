@@ -12,7 +12,8 @@
     <li>
       In case you wish to receive a refund because it was made in error or if
       you wish to change the amount or if you wish to receive a refund due to
-      any emergency, please <a [routerLink]="contact">contact us</a> within 72
+      any emergency, please
+      <span class="link" (click)="routeTo(contact)">contact us</span> within 72
       hrs of the transaction. We may not be able to guarantee a favourable
       decision, but we will sincerely consider your situation and arrive at a
       decision.
@@ -36,8 +37,11 @@
   <h3>Contacting us</h3>
   <p>
     If you have any questions about this refund policy, the practices of this
-    site, or your dealings with this site, please&nbsp;
-    <a [routerLink]="contact">contact us</a>.
+    site, or your dealings with this site, please&nbsp;<span
+      class="link"
+      (click)="routeTo(contact)"
+      >contact us</span
+    >.
   </p>
   <p>This document was last updated on October 24, 2021</p>
 </div>

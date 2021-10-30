@@ -13,6 +13,10 @@ export class AppComponent implements OnInit {
   medium = medium;
   github = github;
   youtube = youtube;
+  home = uiroutes.HOME_ROUTE;
+  about = uiroutes.ABOUT_ROUTE;
+  support = uiroutes.SUPPORT_ROUTE;
+  contact = uiroutes.CONTACT_ROUTE;
   privacy = uiroutes.PRIVACY_ROUTE;
   termsConditions = uiroutes.TERMS_CONDITIONS_ROUTE;
   refunds = uiroutes.REFUND_ROUTE;
@@ -33,6 +37,10 @@ export class AppComponent implements OnInit {
         document.getElementById('topnav-dropdown-toggle').click();
       }
     });
+  }
+
+  routeTo(route) {
+    this.router.navigate([route]);
   }
 
   toggleMobileBottomnav() {

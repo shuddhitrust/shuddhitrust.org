@@ -8,8 +8,9 @@
   <ol>
     <li>At the moment we only receive donations from Indian nationals.</li>
     <li>
-      At the moment our application for 80G certification is still in progress,
-      so your donations will NOT be tax exempt for now.
+      Shuddhi Trust is a registered public charitable trust with 12A and 80G
+      certification (as of Oct 2nd 2021). So your donations are eligible for 80G
+      tax exemption.
     </li>
     <li>
       The information you provide while making a donation are necessary for
@@ -23,7 +24,9 @@
       donations and expenditures are published with all details annually.
     </li>
     <li>
-      <a [routerLink]="refund">Click here to review our Refund Policy</a>
+      <span class="link" (click)="routeTo(refund)"
+        >Click here to review our Refund Policy</span
+      >
     </li>
   </ol>
 
@@ -43,8 +46,11 @@
   <h3>Contacting us</h3>
   <p>
     If you have any questions about these terms and conditions, the practices of
-    this site, or your dealings with this site, please&nbsp;
-    <a [routerLink]="contact">contact us</a>.
+    this site, or your dealings with this site, please&nbsp;<span
+      class="link"
+      (click)="routeTo(contact)"
+      >contact us</span
+    >.
   </p>
-  <p>This document was last updated on October 24, 2021</p>
+  <p>This document was last updated on October 30, 2021</p>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import {
   volunteer,
   donation,
@@ -28,7 +29,11 @@ export class SupportComponent implements OnInit {
   termsConditions = uiroutes.TERMS_CONDITIONS_ROUTE;
   refund = uiroutes.REFUND_ROUTE;
 
-  constructor() {}
+  constructor(private router: Router) {}
+
+  routeTo(route) {
+    this.router.navigate([route]);
+  }
 
   ngOnInit(): void {}
 }
