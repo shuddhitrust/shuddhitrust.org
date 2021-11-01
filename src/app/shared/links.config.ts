@@ -1,6 +1,13 @@
 // Latest videos at the top
 export const videos = [
   {
+    id: 'miwxR_sRDKE',
+    date: '2021-11-01',
+    title: 'Making of Vidhya.io',
+    description:
+      'Have a look at what went into building vidhya.io, our very own non-profit EdTech platform!',
+  },
+  {
     id: 'Rpm29VgbWNw',
     date: '2021-10-02',
     title: 'Introducing Vidhya.io!',

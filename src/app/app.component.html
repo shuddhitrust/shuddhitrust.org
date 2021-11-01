@@ -65,13 +65,13 @@
     "
   >
     <div class="navbar-collapse" id="bottomnav">
-      <ul class="navbar-nav footer-links">
+      <ul class="navbar-nav">
         <ng-container [ngTemplateOutlet]="footerLinksTemplate"> </ng-container>
       </ul>
       <footer class="unselectable copyright-text-desktop">
         Copyright &copy; {{ currentYear }} Shuddhi Trust, All Rights Reserved
       </footer>
-      <ul class="navbar-nav ml-md-auto footer-links">
+      <ul class="navbar-nav ml-md-auto">
         <ng-container
           [ngTemplateOutlet]="footerRightLinksTempalte"
         ></ng-container>
@@ -105,26 +105,10 @@
     style="border-top: 1px solid rgba(0, 0, 0, 0.1)"
   >
     <div style="display: block; margin-left: auto; margin-right: auto">
-      <ul
-        class="
-          navbar-nav
-          bd-navbar-nav
-          flex-row
-          footer-links
-          justify-content-center
-        "
-      >
+      <ul class="navbar-nav bd-navbar-nav flex-row justify-content-center">
         <ng-container [ngTemplateOutlet]="footerLinksTemplate"> </ng-container>
       </ul>
-      <ul
-        class="
-          navbar-nav
-          bd-navbar-nav
-          flex-row
-          footer-links
-          justify-content-center
-        "
-      >
+      <ul class="navbar-nav bd-navbar-nav flex-row justify-content-center">
         <ng-container
           [ngTemplateOutlet]="footerRightLinksTempalte"
         ></ng-container>
@@ -137,17 +121,31 @@
 </div>
 <ng-template #footerLinksTemplate>
   <li class="nav-link">
-    <a [href]="youtube" target="blank" rel="noreferrer noopener"
+    <a
+      class="footer-link"
+      [href]="youtube"
+      target="blank"
+      rel="noreferrer noopener"
       ><i style="color: red" class="fa fa-youtube"></i> YouTube</a
     >
   </li>
   <li class="nav-link">
-    <a [href]="twitter" target="blank" rel="noreferrer noopener">
+    <a
+      class="footer-link"
+      [href]="twitter"
+      target="blank"
+      rel="noreferrer noopener"
+    >
       <i style="color: #1da1f2" class="fa fa-twitter"></i> Twitter
     </a>
   </li>
   <li class="nav-link">
-    <a [href]="github" target="blank" rel="noreferrer noopener">
+    <a
+      class="footer-link"
+      [href]="github"
+      target="blank"
+      rel="noreferrer noopener"
+    >
       <i style="color: black" class="fa fa-github"></i> Github
     </a>
   </li>
@@ -155,12 +153,12 @@
 
 <ng-template #footerRightLinksTempalte>
   <li class="nav-link">
-    <span class="link" (click)="routeTo(termsConditions)">T & C</span>
+    <span class="footer-link" (click)="routeTo(termsConditions)">T & C</span>
   </li>
   <li class="nav-link">
-    <span class="link" (click)="routeTo(refunds)">Refund</span>
+    <span class="footer-link" (click)="routeTo(refunds)">Refund</span>
   </li>
   <li class="nav-link">
-    <span class="link" (click)="routeTo(privacy)">Privacy</span>
+    <span class="footer-link" (click)="routeTo(privacy)">Privacy</span>
   </li>
 </ng-template>
