@@ -1,5 +1,6 @@
 // Latest videos at the top
-export const videos = [
+
+export const videos: Video[] = [
   {
     id: 'miwxR_sRDKE',
     date: '2021-11-01',
@@ -142,6 +143,13 @@ export const videos = [
     description: 'What is Shuddhi Fund? Why did we set it up?',
   },
 ];
+
+export type Video = {
+  id: string;
+  date: string;
+  title: string;
+  description: string;
+};
 
 export const twitter = 'https://twitter.com/shuddhitrust';
 export const github = 'https://github.com/shuddhitrust/shuddhitrust-org';

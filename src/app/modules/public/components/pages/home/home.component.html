@@ -5,11 +5,15 @@
         <ng-container *ngFor="let video of videos; index as i">
           <div [class]="slideClass(i)" data-interval="4000">
             <iframe
+              #iframeContainer
+              loading="lazy"
               style="max-width: 560px; width: 90vw; height: 315px"
               [src]="video?.url"
+              [srcdoc]="video?.srcdoc"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
+              [title]="video?.title"
             ></iframe>
             <div class="video-caption">
               <p>{{ parseDate(video.date) }} - {{ video.description }}</p>
