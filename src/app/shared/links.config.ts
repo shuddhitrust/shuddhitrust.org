@@ -2,6 +2,13 @@
 
 export const videos: Video[] = [
   {
+    id: 'jP2zbdgsmcs',
+    date: '2021-12-03',
+    title: 'Making Shuddhi Trust sustainable',
+    description:
+      'In this video we discuss some strategies that we are looking to adopt to make our non-profit a more viable organisation and make our initiatives succeed in the long-term.',
+  },
+  {
     id: 'miwxR_sRDKE',
     date: '2021-11-01',
     title: 'Making of Vidhya.io',
