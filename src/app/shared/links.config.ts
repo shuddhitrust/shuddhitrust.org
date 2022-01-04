@@ -6,7 +6,7 @@ export const videos: Video[] = [
     date: '2022-01-01',
     title: 'Shuddhi Annual Report to Contributors 2021',
     description:
-      'Our Annual Report to Contributors for all that we did in 2021, including donations received and expenditures',
+      'Our Annual Report to Contributors summarising all that we did in 2021, including donations received and expenditures incurred.',
   },
   {
     id: 'jP2zbdgsmcs',
