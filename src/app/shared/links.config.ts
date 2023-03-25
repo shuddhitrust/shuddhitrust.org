@@ -1,6 +1,14 @@
 // Latest videos at the top
 
 export const videos: Video[] = [
+  
+  {
+    id: 'NhHESVVzDJI',
+    date: '2023-03-25',
+    title: 'Shuddhi Annual Report to Contributors 2022',
+    description:
+      'Our Annual Report to Contributors summarising all that we did in 2022, including donations received and expenditures incurred.',
+  },  
   {
     id: 'OG6MSnMKHtw',
     date: '2022-01-01',
